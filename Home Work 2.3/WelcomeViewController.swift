@@ -12,9 +12,12 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var welcomeTextFieldOutlet: UILabel!
     
     var userName: String!
+    var password: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        welcomeTextFieldOutlet.text = "WELCOME \(String(describing: userName))!"
         
     }
     

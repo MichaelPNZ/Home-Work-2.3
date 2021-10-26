@@ -84,8 +84,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="cit-YV-CwH" id="Byr-Hs-dSQ"/>
                         <outlet property="userNameTextField" destination="kHE-Ob-XzC" id="5kl-Qi-BSf"/>
-                        <segue destination="7VI-Qc-9Qk" kind="presentation" id="Kwn-PF-bzi"/>
-                        <segue destination="7VI-Qc-9Qk" kind="presentation" id="OHi-g6-xY1"/>
+                        <segue destination="7VI-Qc-9Qk" kind="presentation" id="hWi-A3-x6s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,9 +150,6 @@
             <point key="canvasLocation" x="1568.1159420289857" y="67.633928571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="OHi-g6-xY1"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="kisspng-emojipedia-ok-hand-meaning-hand-emoji-5abe9b6ab020b5.5963781415224410667214" width="1024" height="1024"/>
         <systemColor name="systemGray2Color">

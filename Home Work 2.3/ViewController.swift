@@ -19,6 +19,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func logInButtonPressed() {
+        let userName = "User"
+        let password = "Password"
+        
+        if userNameTextField.text == userName && passwordTextField.text == password {
+        }
+        
         let alertControllerLogIn = UIAlertController(title: "Invalid login or password", message: "Please, error correct login and password", preferredStyle: .alert)
         
         alertControllerLogIn.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
@@ -49,10 +55,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = userNameTextField.text
+        welcomeVC.password = passwordTextField.text
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard let welcomeVC = segue.source as? WelcomeViewController else { return }
+        userNameTextField.text = ""
+        passwordTextField.text = ""
     }
 }
 
