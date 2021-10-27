@@ -51,7 +51,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Am8-Jl-35s"/>
-                                            <segue destination="7VI-Qc-9Qk" kind="presentation" identifier="toWelcomScreen" id="01l-ks-Cii"/>
+                                            <segue destination="7VI-Qc-9Qk" kind="presentation" identifier="toWelcomScreen" modalPresentationStyle="fullScreen" id="YfC-Jd-tfL"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="Zak-SO-4TB">
@@ -102,11 +102,11 @@
             <objects>
                 <viewController id="7VI-Qc-9Qk" customClass="WelcomeViewController" customModule="Home_Work_2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6DD-KU-B2w">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KfF-nS-97c">
-                                <rect key="frame" x="132" y="50" width="150" height="178.5"/>
+                                <rect key="frame" x="132" y="94" width="150" height="178.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fl3-ba-6rE">
                                         <rect key="frame" x="54.5" y="0.0" width="41.5" height="20.5"/>
@@ -124,7 +124,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SZ-tb-Vyx">
-                                <rect key="frame" x="154.5" y="514" width="105.5" height="144"/>
+                                <rect key="frame" x="154.5" y="558" width="105.5" height="154"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log out">
@@ -132,7 +132,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logOutButtonPressed" destination="7VI-Qc-9Qk" eventType="touchUpInside" id="KUZ-cM-7oi"/>
-                                    <segue destination="5Ww-ux-f68" kind="unwind" unwindAction="unwindFor:" id="lBa-ZJ-42P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,12 +145,12 @@
                             <constraint firstItem="KfF-nS-97c" firstAttribute="centerX" secondItem="6DD-KU-B2w" secondAttribute="centerX" id="n54-Qn-7zT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wpg-fH-MSI"/>
                     <connections>
                         <outlet property="welcomeTextFieldOutlet" destination="fl3-ba-6rE" id="D7R-zO-gD5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fD7-9L-7lv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="5Ww-ux-f68" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2478.2608695652175" y="67.633928571428569"/>
         </scene>

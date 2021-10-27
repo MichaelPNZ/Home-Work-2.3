@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                                           style: .default,
                                                           handler: nil))
             
-        self.present(alertControllerLogIn, animated: true, completion: nil)
+       present(alertControllerLogIn, animated: true, completion: nil)
             passwordTextField.text = nil
         }
     }
@@ -49,7 +49,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                                              style: .default,
                                                              handler: nil))
         
-        self.present(alertControllerUserName, animated: true, completion: nil)
+        present(alertControllerUserName, animated: true, completion: nil)
     }
     
     @IBAction func forgotPasswordButton() {
@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                                              style: .default,
                                                              handler: nil))
         
-        self.present(alertControllerPassword, animated: true, completion: nil)
+       present(alertControllerPassword, animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -75,7 +75,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard segue.source is WelcomeViewController else { return }
         userNameTextField.text = nil
         passwordTextField.text = nil
     }
