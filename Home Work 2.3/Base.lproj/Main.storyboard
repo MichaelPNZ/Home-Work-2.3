@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--toWelcomScreen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Home_Work_2_3" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,11 +26,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rIj-1Y-e5t"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cit-YV-CwH">
                                                 <rect key="frame" x="0.0" y="42" width="250" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U5Z-C1-k4m"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -45,6 +51,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Am8-Jl-35s"/>
+                                            <segue destination="7VI-Qc-9Qk" kind="presentation" identifier="toWelcomScreen" id="01l-ks-Cii"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="Zak-SO-4TB">
@@ -80,16 +87,15 @@
                             <constraint firstItem="Szr-tZ-saC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yPH-Cr-fFk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nU3-Sd-xE8"/>
+                    <navigationItem key="navigationItem" title="toWelcomScreen" id="nU3-Sd-xE8"/>
                     <connections>
                         <outlet property="passwordTextField" destination="cit-YV-CwH" id="Byr-Hs-dSQ"/>
                         <outlet property="userNameTextField" destination="kHE-Ob-XzC" id="5kl-Qi-BSf"/>
-                        <segue destination="7VI-Qc-9Qk" kind="presentation" id="hWi-A3-x6s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="68"/>
+            <point key="canvasLocation" x="1786.9565217391305" y="67.633928571428569"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="K88-oO-adk">
@@ -147,7 +153,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fD7-9L-7lv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="5Ww-ux-f68" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1568.1159420289857" y="67.633928571428569"/>
+            <point key="canvasLocation" x="2478.2608695652175" y="67.633928571428569"/>
         </scene>
     </scenes>
     <resources>
